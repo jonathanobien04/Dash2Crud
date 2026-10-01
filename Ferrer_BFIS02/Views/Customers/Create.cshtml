@@ -1,0 +1,49 @@
+@model firstASP.Models.Customer
+
+<h1>Add Customer</h1>
+
+<form asp-action="Create" method="post">
+
+    <div class="mb-3">
+        <label asp-for="CustomerName"></label>
+        <input asp-for="CustomerName" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ContactName"></label>
+        <input asp-for="ContactName" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Phone"></label>
+        <input asp-for="Phone" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="City"></label>
+        <input asp-for="City" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="State"></label>
+        <input asp-for="State" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ZipCode"></label>
+        <input asp-for="ZipCode" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Customer</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>
